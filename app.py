@@ -15,7 +15,7 @@ df = pd.DataFrame(list(keyword_scores.items()), columns=["キーワード", "ス
 df = df.sort_values(by="スコア", ascending=False).reset_index(drop=True)
 
 # --- UI ---
-st.title("📘 ACL 2025: キーワードと関連論文ビューア")
+st.title("ACL 2025 Findings: 論文ビューア")
 
 query = st.text_input("🔍 キーワード検索", "")
 min_score, max_score = st.slider(
